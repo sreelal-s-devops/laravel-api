@@ -19,17 +19,18 @@ This project is a simple Task Management API built with Laravel 11 and Laravel S
 
 ### Steps
 
-1. Clone the repository:
-2.composer install
-3.**Copy the .env.example file to .env:**
-4>**php artisan key:generate:**
-5.**Configure your database settings in the .env file:**
-6.**php artisan migrate:**
-7.**composer require laravel/sanctum:**
-8.**php artisan db:seed:**
-9.**php artisan serve:**
+1. Clone the repository.
+2. Run `composer install` to install dependencies.
+3. Copy `.env.example` to `.env` and configure your environment variables.
+4. Run `php artisan key:generate` to generate an application key.
+5.Configure your database settings in the .env file:
+6.Run'php artisan migrate'
+7.Run 'composer require laravel/sanctum'
+8.Run 'php artisan db:seed'
+9.Run'php artisan serve'
 
 ###API Endpoints
+
 Register:POST /api/register
 {
     "name": "<user name>",
@@ -37,23 +38,27 @@ Register:POST /api/register
     "password": "<password>",
 
 }
+
 Login:POST /api/login
 {
     "email": "<email>",
     "password": "<password>"
 }
+
 Logut:POST /api/logout
 Headers:Authorization: Bearer your-generated-token
 
 Get all tasks:GET /api/tasks
 
 Create a new task:POST /api/tasks
+
 Request body:{
     "title": "New Task",
     "description": "Task description"
 }
 
 Update a task:PUT /api/tasks/{task}
+
 Request body:{
     "title": "Updated Task",
     "description": "Updated description"
