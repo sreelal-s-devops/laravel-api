@@ -20,7 +20,7 @@ This project is a simple Task Management API built with Laravel 11 and Laravel S
 ### Steps
 
 1. Clone the repository:
-2.**composer install:**
+2.composer install
 3.**Copy the .env.example file to .env:**
 4>**php artisan key:generate:**
 5.**Configure your database settings in the .env file:**
