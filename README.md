@@ -42,20 +42,20 @@ This project is a simple Task Management API built with Laravel 11 and Laravel S
     "email": "<email>",
     "password": "<password>"
 }
-###Login
+##Login
 **POST** `/api/login`
 ```json
 {
     "email": "<email>",
     "password": "<password>"
 }
-###Logout
+##Logout
 **POST** `/api/logout`
 
-###Header
+##Header
 Authorization: Bearer <your-generated-token>
 
-###Get All Tasks
+##Get All Tasks
 ***GET*** '/api/tasks'
 
 ###Create Tasks
