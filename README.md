@@ -42,8 +42,11 @@ This project is a simple Task Management API built with Laravel 11 and Laravel S
     "email": "<email>",
     "password": "<password>"
 }
-##Login
+## Login
+
 **POST** `/api/login`
+
+**Request Body:**
 ```json
 {
     "email": "<email>",
